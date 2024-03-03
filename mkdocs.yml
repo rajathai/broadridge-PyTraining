@@ -1,4 +1,4 @@
-site_name: Broadridge - Python Training
+site_name: Broadridge
 site_description: Resources for Trainings of Rajath Kumar K S
 site_url: https://broadridge.rajath.link
 theme:
@@ -73,5 +73,7 @@ plugins:
 
 nav:
   - Home: index.md
-  - Getting Started: installation.md
+  - Get Started: installation.md
+  - Agenda: agenda.md
   - Day 01: day1.md
+  - Day 02: day2.md
