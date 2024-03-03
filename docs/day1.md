@@ -402,3 +402,229 @@ print("Bitwise Left Shift (a << 2):", a << 2)  # Left shift the bits of a by 2, 
 print("Bitwise Right Shift (a >> 2):", a >> 2)  # Right shift the bits of a by 2, result is 3
 
 ```
+
+## **Functions in Python**
+
+A function is a block of organized, reusable code that is used to perform a single, related action. Functions help break our program into smaller and modular chunks.
+
+Defining a function:
+
+```py linenums="1"
+def my_function():
+    print("Hello from a function")
+```
+
+Calling a function:
+
+```py
+my_function()
+```
+
+!!! alert "About Functions"
+    We will dive Deep into functions in later classes
+
+## **Modules**
+
+A module is a collection of Functions in a Single Python file.
+
+It may also contain classes, and variables, and is used to organize related code. A module is a Python file with a .py extension.
+
+You can use any Python source file as a module by executing an import statement in another Python source file.
+
+```py linenums="1"
+import my_module
+my_module.my_function()
+```
+
+## **Packages**
+
+Packages are collections of modules.
+
+Packages are a way of structuring Python’s module namespace by using “dotted module names.” A package is a directory containing a special file `__init__.py` and can contain subpackages and modules.
+
+```py linenums="1"
+import package_name.module_name
+```
+
+## **Creating Modules in Python**
+
+**Step 0: Create the directory called (`pack`)**
+
+Navigate to the directory and follow the further steps.
+
+**Step 1: Create the first module (`modone.py`)**
+
+In this module, it consists of two functions, Addition and Multiplication.
+
+```py linenums="1"
+def addn(a, b):
+    """Addn function for adding two numbers together
+
+    Args:
+        a (float): integer or float
+        b (float): integer or float
+
+    Returns:
+        float: Returns the sum of the two numbers that are passed in as
+        arguments to the function for parameters a and b.
+    """
+    return a + b
+
+
+def muln(a, b):
+    """muln function for Product two numbers together
+
+    Args:
+        a (float): integer or float
+        b (float): integer or float
+
+    Returns:
+        float: Returns the product of the two numbers that are passed in as
+        arguments to the function for parameters a and b.
+    """
+    return a * b
+
+```
+
+**Step 2: Create the second module (`modtwo.py`)**
+
+In this module, it consists of two functions, Subtraction and Division.
+
+```py linenums="1"
+def subn(a, b):
+    """Subn function for Subtraction two numbers together
+
+    Args:
+        a (float): integer or float
+        b (float): integer or float
+
+    Returns:
+        float: Returns the Subtraction of the two numbers that are passed in as
+        arguments to the function for parameters a and b.
+    """
+    return a - b
+
+
+def divn(a, b):
+    """Division function for dividing two numbers together
+
+    Args:
+        a (float): integer or float
+        b (float): integer or float
+
+    Returns:
+        float: Returns the Quotient of the two numbers that are passed in as
+        arguments to the function for parameters a and b.
+    """
+    return a / b
+
+```
+
+**Step 3: Create a Script to Use the Modules (`callmod.py`)**
+
+```py linenums="1"
+import modone
+import modtwo
+
+print(modone.addn(9, 8))
+print(modone.addn.__doc__)
+
+print(modone.muln(9, 8))
+print(modone.muln.__doc__)
+
+print(modtwo.subn(9, 8))
+print(modtwo.subn.__doc__)
+
+print(modtwo.divn(9, 8))
+print(modtwo.divn.__doc__)
+```
+
+**Step 4: Run Your Script (`callmod.py`)**
+
+```bash
+python callmod.py
+```
+
+Ensure your file are structured as follows in the same directory:
+
+```md
+.
+├── Project Directory
+└── pack/
+    ├── modone.py
+    ├── modtwo.py
+    └── callmod.py
+```
+
+## **Creating Packages in Python**
+
+**Step 5: Create an Empty `__init__.py` file in the pack directory**
+
+```bash
+touch __init__.py
+```
+
+Your directory structure should now look like this:
+
+```md
+.
+├── Project Directory
+└── pack/
+    ├── __init___.py
+    ├── modone.py
+    ├── modtwo.py
+    └── callmod.py
+```
+
+**Step 6: Use the Package in Your Script (`callpack.py`)**
+
+```py linenums="1"
+from pack import modone
+from pack import modtwo
+
+print(modone.addn(2, 2))
+print(modtwo.divn(2, 0.5))
+```
+
+Your directory structure should now look like this at the End:
+
+```md
+.
+├── Project Directory
+├── pack/
+│   ├── __init___.py
+│   ├── modone.py
+│   ├── modtwo.py
+│   └── callmod.py
+└── callpack.py
+```
+
+## **Rules of Python - PEP8 (Python Style Guide)**
+
+PEP 8, or Python Enhancement Proposal 8, is the official style guide for the Python code comprising the conventions that Python developers are advised to follow. Here are some key aspects of PEP 8:
+
+1. **Indentation**: Use 4 spaces per indentation level. Continuation lines should align wrapped elements either vertically, or using a hanging indent of 4 spaces.
+
+2. **Maximum Line Length**: Limit all lines to a maximum of 79 characters for code and 72 characters for comments and docstrings.
+
+3. **Blank Lines**: Use blank lines to separate functions and classes, and larger blocks of code inside functions.
+
+4. **Whitespace in Expressions and Statements** : Avoid extraneous whitespace in the following situations:
+
+    - Immediately inside parentheses, brackets, or braces.
+    - Between a trailing comma and a following close parenthesis.
+    - Immediately before a comma, semicolon, or colon.
+    - However, use whitespace around arithmetic operators.
+
+5. **Comments**: Comments should be complete sentences and should be used sparingly, i.e., only when necessary to explain complex pieces of code.
+
+6. **Naming Conventions**:
+
+    - Functions: Function names should be lowercase, with words separated by underscores as necessary to improve readability.
+    - Variables: Use a lowercase single letter, word, or words. Separate words with underscores to improve readability.
+    - Classes: Class names should follow the UpperCaseCamelCase convention.
+    - Constants: Constants are usually defined on a module level and written in all capital letters with underscores separating words.
+
+
+
+PEP 8 is a guideline, not a strict set of rules. It's encouraged to adhere to it, but there can be exceptions based on the context and necessity.
