@@ -2,11 +2,9 @@
 
 Creating a virtual environment in Python is essential for managing dependencies for different projects. Here's how to set up a virtual environment on a Windows machine:
 
-You Download the Guide for Virtual Environment from [here](assets/pdfs/Virtual%20Environment.pdf).
-
 ## **Step 1: Open Command Prompt / Powershell**
 
-Press ++win+r++, type `cmd`, and hit `Enter` to open the Command Prompt.
+Press `win+r`, type `cmd`, and hit `Enter` to open the Command Prompt.
 
 ## **Step 2: Navigate to Your Project Directory**
 
@@ -16,8 +14,9 @@ Use the `cd` command to navigate to the directory where you want to create the v
 cd path\to\your\project\directory
 ```
 
-!!! tip "Optional"
-    For this entire training we recommend using the same directory.
+> [!CAUTION] 
+>
+> [Optional] For this entire training we recommend using the same directory or Environment.
 
 ## **Step 3: Install the Virtualenv Package**
 
@@ -35,29 +34,33 @@ Run the following command to create the virtual environment. Requires **env_name
 python -m venv env_name
 ```
 
-!!! tip "Common Virtual Environment Name (Optional)"
-    In general, we recommend using **.env** as the virtual environment name.
+> [!TIP]
+>
+> In general, we recommend using **.env** as the virtual environment name.
 
 ## **Step 5: Activate the virtual environment**
 
 Run the following command to activate the virtual environment. Once the environment is created, you need to activate with the following command:
 
-=== "Command Prompt"
+On  "Command Prompt"
 
     ```bash
     env_name\Scripts\activate
     ```
 
-=== "Powershell"
+On "Powershell"
 
     ```bash
     env_name\Scripts\Activate.ps1
     ```
 
-!!! warning
-    If you face any problems on permisssions you should contact your IT Team.
-    Consider the solution if you're Windows User along with powershell
-    Support [Activating Virtualenv Issue - Solution](https://stackoverflow.com/questions/18713086/virtualenv-wont-activate-on-windows)
+> [!WARNING]
+>
+> If you face any problems on permisssions you should contact your IT Team.
+> Consider the solution if you're Windows User along with powershell
+>  Support [Activating Virtualenv Issue - Solution](https://stackoverflow.com/questions/18713086/virtualenv-wont-activate-on-windows)
+
+​    
 
 ## **Step 6: Update the pip package version with the latest version**
 
@@ -73,9 +76,6 @@ Your command prompt should now reflect the virtual environment's name, indicatin
 
 ```bash
 python
-```
-
-```python
 import sys
 sys.executable
 ```
@@ -106,5 +106,7 @@ When you're done working in the virtual environment, You can deactivate it by si
 deactivate
 ```
 
-!!! Note
-    you should ensure that `deactivate` command executes and you're out of the environment.
+> [!NOTE]
+>
+> you should ensure that `deactivate` command executes and you're out of the environment.
+>     

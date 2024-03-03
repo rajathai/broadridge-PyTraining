@@ -1,8 +1,7 @@
-# Detailed Agenda
-![Python](assets/images/python-logo.png){ align=left width=90 }
-<p style="text-align: justify;">Embark on a ten-day comprehensive learning journey designed to elevate your Python skills. Each day is structured to build upon the last, ensuring a cohesive and in-depth understanding of Python's vast capabilities.</p>
+# Detailed Agenda - Broadridge
+<img src="assets/images/python-logo.png" alt="Python" style="zoom:25%;" />
 
-You Download the Complete Agenda from [here](assets/pdfs/Agenda.pdf).
+<p style="text-align: justify;">Embark on a ten-day comprehensive learning journey designed to elevate your Python skills. Each day is structured to build upon the last, ensuring a cohesive and in-depth understanding of Python's vast capabilities.</p>
 
 ## **Day 1: Introduction to Python**
 

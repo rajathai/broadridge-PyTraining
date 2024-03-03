@@ -2,14 +2,11 @@
 
 ## **Introduction to Python**
 
-![Python](assets/images/python-logo.png){ align=left width=150 }
 <p style="text-align: justify;">Python is a high-level, interpreted programming language known for its clear syntax and readability. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace.</p>
 
 <p style="text-align: justify;">Its versatile nature allows Python to be used in various domains, such as web development, data analysis, artificial intelligence, machine learning, automation, and scientific computing. Companies like Google, Netflix, and Facebook use Python for a wide range of purposes, demonstrating its adaptability and power.</p>
 
 <p style="text-align: justify;">With a rich ecosystem of libraries and frameworks, Python makes it possible to work on complex tasks with relatively simple and understandable code, making it a popular choice for beginners and experts alike.</p>
-
-You can also download the Complete Day 01 Notes from [Here](assets/pdfs/Day%2001.pdf)
 
 ## **Features of Python**
 
@@ -102,7 +99,7 @@ else:
 print("Bingo!")  # Statements
 print("Python is Awsome!")  # Statements
 ```
-  
+
 ## **Variables**
 
 - **Declaration**: Variables do not need explicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a variable. E.g., x = 10.
@@ -137,8 +134,11 @@ print(x)
 - **Dictionaries**: Unordered and mutable collections of key-value pairs, e.g., {"name": "Alice", "age": 25}.
 - **Sets**: Unordered collections of unique elements, e.g., {1, 2, 3}.
 
-!!! info
-    To get the type of a Variable or a Data Structure in Python We can use **type(var)** Inbuilt Function
+> [!TIP]
+>
+>  To get the type of a Variable or a Data Structure in Python We can use **type(var)** Inbuilt Function
+
+
 
 For Example,
 
