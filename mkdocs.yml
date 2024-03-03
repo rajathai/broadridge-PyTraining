@@ -10,15 +10,15 @@ theme:
   palette:
   - media: '(prefers-color-schema: light)'
     scheme: default
-    primary: teal
-    accent: blue
+    primary: indigo
+    accent: indigo
     toggle:
       icon: material/lightbulb
       name: Switch to dark mode
   - media: '(prefers-color-schema: dark)'
     scheme: slate
-    primary: teal
-    accent: blue
+    primary: indigo
+    accent: indigo
     toggle:
       icon: material/lightbulb
       name: Switch to dark mode
