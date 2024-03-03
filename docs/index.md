@@ -1,6 +1,6 @@
 # Python Training
 
-<p style="text-align: justify;">Welcome to a comprehensive Python Training Program, exclusively designed for Broadridge's professional enrichment. Spearheaded by our skilled trainer **Rajath Kumar K S**, this program spans from 4th March 2024 to 15th March 2024, unfolding a rich curriculum at our Bangalore location.</p>
+<p style="text-align: justify;">Welcome to a comprehensive Python Training Program, exclusively designed for Broadridge's professional enrichment. Spearheaded by our skilled trainer <strong>Rajath Kumar K S</strong>, this program spans from 4th March 2024 to 15th March 2024, unfolding a rich curriculum at our Bangalore location.</p>
 
 ## Dive into Python
 

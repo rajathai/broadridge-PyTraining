@@ -10,14 +10,14 @@ theme:
   palette:
   - media: '(prefers-color-schema: light)'
     scheme: default
-    primary: indigo
+    primary: white
     accent: indigo
     toggle:
       icon: material/lightbulb
       name: Switch to dark mode
   - media: '(prefers-color-schema: dark)'
     scheme: slate
-    primary: indigo
+    primary: white
     accent: indigo
     toggle:
       icon: material/lightbulb
@@ -75,6 +75,7 @@ nav:
   - Home: index.md
   - Get Started: installation.md
   - Agenda: agenda.md
+  - Virtualenv: environment.md
   - Day 01: day1.md
   - Day 02: day2.md
   - Day 03: day3.md
@@ -85,4 +86,4 @@ nav:
   - Day 08: day8.md
   - Day 09: day9.md
   - Day 10: day10.md
-  - Contact Trainer: contact.md 
+  - About Trainer: contact.md 
