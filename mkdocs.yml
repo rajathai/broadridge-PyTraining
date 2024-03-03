@@ -78,6 +78,9 @@ copyright: Copyright &copy; 2024 - Rajath Kumar K S
 
 extra:
   generator: false
+  analytics:
+    provider: google
+    property: G-88N3GT8PJG
 
 nav:
   - Home: index.md
