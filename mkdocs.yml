@@ -1,0 +1,77 @@
+site_name: Broadridge - Python Training
+site_description: Resources for Trainings of Rajath Kumar K S
+site_url: https://broadridge.rajath.link
+theme:
+  name: material
+  icon:
+    logo: fontawesome/brands/python
+    annotation: material/arrow-right-circle
+  favicon: fontawesome/brands/python
+  palette:
+  - media: '(prefers-color-schema: light)'
+    scheme: default
+    primary: teal
+    accent: blue
+    toggle:
+      icon: material/lightbulb
+      name: Switch to dark mode
+  - media: '(prefers-color-schema: dark)'
+    scheme: slate
+    primary: teal
+    accent: blue
+    toggle:
+      icon: material/lightbulb
+      name: Switch to dark mode
+    features:
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - navigation.indexes
+    - content.tooltips
+    - navigation.path
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - navigation.tabs
+markdown_extensions:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - abbr
+  - admonition
+  - tables
+  - footnotes
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins: 
+  - search
+
+nav:
+  - Home: index.md
+  - Getting Started: installation.md
+  - Day 01: day1.md
