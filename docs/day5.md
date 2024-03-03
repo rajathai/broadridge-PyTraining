@@ -1,11 +1,11 @@
-# Day 02
+# Day 05
 
 <!-- Display the countdown timer in an element -->
-<h3>Content will be released in <strong><span id="demo"></span></strong> i.e on 5th March 2024, Morning 09:50:00 AM 🚀</h3>
+<h3>Content will be released in <strong><span id="demo"></span></strong> i.e on 8th March 2024, Morning 09:50:00 AM 🚀</h3>
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Mar 5, 2024 09:50:00").getTime();
+var countDownDate = new Date("Mar 8, 2024 09:50:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
