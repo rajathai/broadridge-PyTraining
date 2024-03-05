@@ -1,6 +1,8 @@
 # Day 02
 
-You can also download the Complete Day 02 Notes from [Here](assets/pdfs/Day%2002.pdf)
+
+
+[TOC]
 
 ## **Strings in Python**
 
@@ -208,8 +210,9 @@ def function_name():
     # code gets indented here
 ```
 
-!!! note
-    Notice that we MUST indent on the following line. If you do not indent your code, you'll get an IndentationError! To invoke a function, use the ():
+> [!NOTE]
+>
+> Notice that we MUST indent on the following line. If you do not indent your code, you'll get an IndentationError! To invoke a function, use the ():
 
 ```py linenums="1"
 def first_function(): 
