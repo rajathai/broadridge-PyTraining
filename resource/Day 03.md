@@ -1,5 +1,9 @@
 # **Day 03**
 
+
+
+[TOC]
+
 ## **Generators**
 
 Generator functions are functions that allow us to return multiple times using the yield keyword. This allows us to generate many values over time from a single function. What makes generators so powerful is that unlike other forms of iteration, the values are not all computed upfront so we can suspend our state using the yield keyword and come back to to the function later to continue on. This makes generators a great choice for things like calculating large data sets.
@@ -108,9 +112,6 @@ all([0]) # False
 all([0,1]) # False 
 all([0, "", [1]]) # False 
 all([1, "a", [1]]) # True
-```
-
-```python
 any([0]) # False 
 any([0,1]) # True 
 any([0, "", [1]]) # True
@@ -146,15 +147,9 @@ def whisper():
 def perform_action(func):
     print("Something is happening...")
     return func()
-```
-
-```python
 perform_action(shout)
 # Something is happening...
 # WHOA!
-```
-
-```python
 perform_action(whisper)
 # Something is happening...
 # Shhh
@@ -247,15 +242,9 @@ def shout():
 @perform_action
 def whisper():
     return "Shhh"
-```
-
-```python
 shout()
 # Something is happening...
 # 'WHOA!'
-```
-
-```python
 whisper()
 # Something is happening...
 # 'Shhh'
@@ -266,9 +255,6 @@ This code will work just fine, but if we examine the `__name__` or `__doc__` att
 ```python
 shout.__name__
 # 'wrap_func'
-```
-
-```python
 shout.__doc__
 # ' Wrapper function '
 ```
@@ -296,14 +282,8 @@ def shout():
 def whisper():
     ''' People Whispers '''
     return "Shhh"
-```
-
-```python
 shout.__name__
 # 'shout'
-```
-
-```python
 shout.__doc__
 # ' People Shouts '
 ```

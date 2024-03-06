@@ -1,4 +1,4 @@
-# Day 02
+# **Day 02**
 
 You can also download the Complete Day 02 Notes from [Here](assets/pdfs/Day%2002.pdf)
 
