@@ -1,0 +1,7 @@
+{
+  "name": "Rajath Kumar",
+  "age": 31,
+  "is_employee": true,
+  "email": "rajathkuamrks@gmail.com",
+  "skills": ["Embedded/RTOS", "IoT", "Python", "ML/DL"]
+}

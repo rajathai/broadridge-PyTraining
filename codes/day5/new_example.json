@@ -1,0 +1,10 @@
+{
+    "name": "Elon Musk",
+    "age": 45,
+    "is_employee": false,
+    "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+    ]
+}
